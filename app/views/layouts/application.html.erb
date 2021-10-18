@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myschedule</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+  
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ruby on Rails スケジュール管理アプリ</h1>
+    </header>
+    <%= yield %>
+    <footer>
+      <h1>現在の日時 : <span id="ShowDateYMD"></span>　スケジュール合計 : 3</h1>
+      
+    <script type="text/javascript">
+     var now = new Date();
+     var Y = now.getFullYear();
+     var M = now.getMonth() + 1;
+     var D = now.getDate();
+     document.getElementById('ShowDateYMD').innerHTML = Y + '年' + M + '月' + D + '日';
+    </script>
+    </footer>
+  </body>
+</html>

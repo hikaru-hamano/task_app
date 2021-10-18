@@ -1,0 +1,78 @@
+ ul li {
+    list-style: none;
+    padding-left: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+header, footer {
+    width: 100%;
+    padding: 10px;
+    background: #c52f24;
+    color: #fff;
+    margin: 0px;
+}
+
+.main_container {
+  margin: 50px 15px;
+}
+ 
+ table {
+    border-collapse: collapse;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ table th, table td {
+  border: solid 1px black;
+  padding: 10px 20px;
+ }
+ table th {
+  background-color: #FFCCCC;
+  padding: 10px 20px;
+}
+
+table td {
+  background-color: #FFDBC9;
+  text-align: center;
+}
+
+.notice {
+  background-color: #ccf;
+  padding: 5px;
+}
+
+input,pre {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#user_schedule {
+    width: 350px;
+    height: 200px;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    width: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+}
